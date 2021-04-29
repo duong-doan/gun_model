@@ -506,19 +506,11 @@ a[role="button"] {
 /* -----carousel---- */
 
 .carousel-inner {
-    height: 330px;
-}
-
-.carousel-item {
-    margin-left: 0;
+    height: 380px;
 }
 
 ol li {
     background-color: black;
-}
-
-.carousel-item {
-    margin-left: 15px;
 }
 
 .carousel-item p {
@@ -705,12 +697,15 @@ ol li {
 /* footer */
 
 .footer {
-    height: 80px;
     width: 100%;
     background-color: rgb(91, 91, 91);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer_left {
+    width: 70%;
 }
 
 .footer_left p {
@@ -819,5 +814,17 @@ ol li {
     section,
     .footer {
         width: 80vh;
+    }
+
+    .footer_right {
+        width: 50%;
+    }
+}
+
+@media (max-width: 710px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
